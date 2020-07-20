@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS leisure_db;
+
+CREATE DATABASE leisure_db;

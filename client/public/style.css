@@ -1,0 +1,119 @@
+ .LeisureForYou h1 {
+ text-align: center;
+ color: white; 
+ font-family: Impact;
+ font-weight: bold;
+
+}
+
+h2 {
+  text-align: center;
+  color: white; 
+
+}
+
+.LeisureForYou, h3 {
+ color: white;
+ text-align: center;
+}
+
+
+.container-1 {
+background-color: #9E0059;
+
+}
+
+
+.container-2 {
+
+background-color: #FF0054;
+}
+
+
+.container-3 {
+background-color: #FF5400;
+}
+
+.footer {
+  background-color: #390099;
+  text-align: center;  
+  color: white;
+  
+}
+h1 {
+  text-align: center;
+}
+h6 {
+text-align: center;  
+color: white;
+}
+
+.socials {
+text-align: center; 
+}
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: pink;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  .carousel-image {
+    width: 625px;
+    height: 325px;
+    object-fit: contain;
+    margin: 20px auto;
+    }
+
+  h5 {
+color: white;
+  text-align: center;
+  }
+
+  .container-4 {
+    margin: auto;
+    background-color: #9E0059;
+  }
+
+   .img {
+   margin: auto;
+
+  }
+
+  h4 {
+   text-align: center;
+   color: white; 
+  }
+
+  .contact {
+    text-align: center;
+  }
+
+  .card-title {
+    color: black;
+   text-align: center;
+
+  }
+
+  .leisure {
+    color: black;
+    text-align: left;
+  }

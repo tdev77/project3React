@@ -1,0 +1,56 @@
+  
+  
+  <div class="grid-container">
+      <h2 class="text-center">Top Albums</h2> 
+      <br>
+    <div class="grid-x"> 
+      <div class="cell small-3"> 
+        <span class="label alert">
+          <h3 class="text-left">Albums</h3>
+          </span> 
+        {{#each albums}}
+          {{#unless this.listened}}
+            <div class="album">  
+            <form class="albumUnlistened"> 
+              <p>Title:    {{this.title}}</p>  
+              <p>Artist: {{this.artist}}</p> 
+              <p>Review: {{this.review}}</p> 
+              <button type="submit" class="warning button" data-id={{this.id}}>Listened</button> 
+            </form>
+            </div>
+          {{/unless}}
+        {{/each}}
+      </div>
+
+    <div class="grid-x"> 
+      <div class="cell medium-12">
+         <div class="translucent-form-overlay">
+              <form class="album">
+                <h3 class="text-center">Add An Album</h3>
+                  <div class="row columns">
+                    <label>Title
+                    <input type="text" name="title" class="title-input">
+                    </label>
+                  </div>
+                  <div class="row columns">
+                    <label>Artist
+                    <input type="text" name="artist" class="artist-input">
+                    </label>
+                  </div>
+                  <div class="row columns">
+                   <label>Review
+                    <input type="text" name="review" placeholder="Optional" class="review-input">
+                    </label>
+                  </div>
+                  <button type="submit" class="secondary button expanded search-button">Submit Album</button>
+                </form>
+        </div>
+      </div>  
+    </div>  
+    </div>
+    </div>
+
+    <br> 
+    <br> 
+    <br>
+    <br>
