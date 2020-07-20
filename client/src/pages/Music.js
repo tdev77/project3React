@@ -167,6 +167,61 @@ return (
     <div className="new releases">
       <h4>Summer Heat</h4>
     </div>
+
+    <div>
+  <div className="grid-container">
+    <h2 className="text-center">Top Albums</h2> 
+    <br />
+    <div className="grid-x"> 
+      <div className="cell small-3"> 
+        <span className="label alert">
+          <h3 className="text-left">Albums</h3>
+        </span> 
+        {'{'}{'{'}#each albums{'}'}{'}'}
+        {'{'}{'{'}#unless this.listened{'}'}{'}'}
+        <div className="album">  
+          <form className="albumUnlistened"> 
+            <p>Title:    {'{'}{'{'}this.title{'}'}{'}'}</p>  
+            <p>Artist: {'{'}{'{'}this.artist{'}'}{'}'}</p> 
+            <p>Review: {'{'}{'{'}this.review{'}'}{'}'}</p> 
+            <button className="warning button" type="submit" data-id="{{this.id}}">Listened</button> 
+          </form>
+        </div>
+        {'{'}{'{'}/unless{'}'}{'}'}
+        {'{'}{'{'}/each{'}'}{'}'}
+      </div>
+      <div className="grid-x"> 
+        <div className="cell medium-12">
+          <div className="translucent-form-overlay">
+            <form className="album">
+              <h3 className="text-center">Add An Album</h3>
+              <div className="row columns">
+                <label>Title
+                  <input name="title" className="title-input" type="text" />
+                </label>
+              </div>
+              <div className="row columns">
+                <label>Artist
+                  <input name="artist" className="artist-input" type="text" />
+                </label>
+              </div>
+              <div className="row columns">
+                <label>Review
+                  <input name="review" className="review-input" type="text" placeholder="Optional" />
+                </label>
+              </div>
+              <button className="secondary button expanded search-button" type="submit">Submit Album</button>
+            </form>
+          </div>
+        </div>  
+      </div>  
+    </div>
+  </div>
+  <br /> 
+  <br /> 
+  <br />
+  <br />
+</div>
     <div className="container">
       <div className="card-deck">
         <div className="card bg-primary">

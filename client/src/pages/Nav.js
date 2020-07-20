@@ -34,6 +34,7 @@ style={{ "background-color": "#390099" }}
     <Link className="nav-item nav-link" to="/contact">
       Contact
     </Link>
+   
   </div>
   <form className="form-inline ml-auto">
     <input
@@ -45,6 +46,9 @@ style={{ "background-color": "#390099" }}
       Search
     </button>
   </form>
+  <Link className="nav-item nav-link" to="/login">
+      Login
+    </Link>
 </div>
 </nav>
 )}

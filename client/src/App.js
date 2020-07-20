@@ -10,6 +10,7 @@ import Community from "./pages/Community";
 import Contact from "./pages/Contact";
 import Books from "./pages/Books";
 import Footer from "./pages/Footer";
+import Login from "./pages/Login";
 class App extends Component {
   render() {
     return (
@@ -23,6 +24,7 @@ class App extends Component {
             <Route exact path="/books" component={Books}></Route>
             <Route exact path="/community" component={Community}></Route>
             <Route exact path="/contact" component={Contact}></Route>
+            <Route exact path="/login" component={Login}></Route>
           </Switch>
           <Footer></Footer>
         </Router>
