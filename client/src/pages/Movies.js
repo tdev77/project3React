@@ -1,5 +1,16 @@
-import React from "react";
+
+import movieApi from "../Api/MovieAPI.js";
+import React, { useState } from 'react';
 const Movies =() => {
+  const [movies, setMovies] = useState([]);
+  if(movies.length == 0){
+    movieApi.searchUpcomingMovies(function(res){
+
+      console.log(res)
+      setMovies(res.results)
+    }) 
+  }
+
 return (
 
 
@@ -153,6 +164,124 @@ return (
         {/*/.Slides*/}
       </div>
     </div>
+
+
+{/* top movies starts */}
+
+<div className="new releases">
+      <h4>Top Movies</h4>
+    </div>
+    <div className="container">
+      <div id="multi-item-example" className="carousel slide carousel-multi-item" data-ride="carousel">
+        {/*Controls*/}
+        <div className="controls-top">
+          <a className="btn-floating" href="#multi-item-example" data-slide="prev"><i className="fa fa-chevron-left" /></a>
+          <a className="btn-floating" href="#multi-item-example" data-slide="next"><i className="fa fa-chevron-right" /></a>
+        </div>
+        {/*/.Controls*/}
+        {/*Indicators*/}
+        <ol className="carousel-indicators">
+          <li data-target="#multi-item-example" data-slide-to={0} className="active" />
+          <li data-target="#multi-item-example" data-slide-to={1} />
+          <li data-target="#multi-item-example" data-slide-to={2} />
+        </ol>
+        {/*/.Indicators*/}
+        {/*Slides*/}
+        <div className="carousel-inner" role="listbox">
+          {/*First slide*/}
+
+
+          <div className="carousel-item active">
+            <div className="row">
+           
+                     {movies.slice(0, 3).map((item)=>{
+                   return (
+                    <div className="col-md-4">
+                    <div className="card mb-2">
+                      <img className="card-img-top" src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} alt="Card image cap" />
+                      <div className="card-body">
+                   <h4 className="card-title">{item.title}</h4>
+                        <p className="card-text"></p>
+                        <a className="btn btn-primary">Button</a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                   )
+
+                     })}
+              
+              
+            </div>
+          </div>
+          {/*/.First slide*/}
+          {/*Second slide*/}
+          <div className="carousel-item">
+            <div className="row">
+             
+            {movies.slice(3, 6).map((item)=>{
+                   return (
+                    <div className="col-md-4">
+                    <div className="card mb-2">
+                      <img className="card-img-top" src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} alt="Card image cap" />
+                      <div className="card-body">
+                   <h4 className="card-title">{item.title}</h4>
+                        <p className="card-text"></p>
+                        <a className="btn btn-primary">Button</a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                   )
+
+                     })}
+              
+            </div>
+          </div>
+          {/*/.Second slide*/}
+          {/*Third slide*/}
+          <div className="carousel-item">
+            <div className="row">
+              
+            {movies.slice(6, 9).map((item)=>{
+                   return (
+                    <div className="col-md-4">
+                    <div className="card mb-2">
+                      <img className="card-img-top" src={`https://image.tmdb.org/t/p/w500${item.poster_path}`} alt="Card image cap" />
+                      <div className="card-body">
+                   <h4 className="card-title">{item.title}</h4>
+                        <p className="card-text"></p>
+                        <a className="btn btn-primary">Button</a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                   )
+
+                     })}
+            
+            </div>
+          </div>
+          {/*/.Third slide*/}
+        </div>
+        {/*/.Slides*/}
+      </div>
+    </div>
+
+
+
+
+
+    {/* end Top Movies */}
+
+
+
+
+
+
     <div className="new releases">
       <h4>This Week's Pick</h4>
     </div>
