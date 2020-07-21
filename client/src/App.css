@@ -25,3 +25,11 @@
 
 
 
+
+body { 
+  background: url("https://www.wallpaperflare.com/static/296/381/195/people-walk-music-player-wallpaper.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} 
