@@ -16,7 +16,7 @@ style={{ "background-color": "#390099" }}
 </button>
 <div id="navbarCollapse" className="collapse navbar-collapse">
   <div className="navbar-nav">
-    <Link className="nav-item nav-link active" to="/">
+    <Link className="nav-item nav-link active" to="/home">
       Home
     </Link>{" "}
     <Link className="nav-item nav-link" to="/music">
