@@ -78,7 +78,7 @@ return (
           </div>
         </div>
         <div className="card">
-          <img src className="card-img-top" alt="..." />
+          <img src img src="Rick-Morty-Rick-Five-Arms.png" className="card-img-top" alt="..." />
           <div className="card-body">
             <h3 className="card-title">David S.</h3>
             <p className="card-text">Back-End Developer.</p>
