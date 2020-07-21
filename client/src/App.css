@@ -33,3 +33,11 @@ body {
   -o-background-size: cover;
   background-size: cover;
 } 
+
+.translucent-form-overlay {
+  max-width: 100%;
+  width: 100%;
+  background-color: rgba(44, 48, 44, 0.8);
+  padding: 20px;
+  color: #fefefe;
+}
