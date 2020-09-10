@@ -1,6 +1,8 @@
 # Leisure For You
 A React application, that lets the user stream music, seraches for books, as well as their favorite movies. 
 
+## Description 
+The application was built with Bootsrap, React, JSX, Handlebars, NPM, JSON, HTML5, CSS
 # Create React Express App
 
 ## About This Boilerplate
@@ -41,3 +43,10 @@ To deploy, simply add and commit your changes, and push to Heroku. As is, the NP
 * Mongoose
 * Handlebars
 * NPM 
+* Bootstrap 4
+* JSON
+* JSX 
+* HTML5
+* CSS
+* Github
+* Git Bash
