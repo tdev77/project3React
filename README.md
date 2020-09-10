@@ -1,3 +1,5 @@
+# Leisure For You
+
 # Create React Express App
 
 ## About This Boilerplate
@@ -37,3 +39,4 @@ To deploy, simply add and commit your changes, and push to Heroku. As is, the NP
 * React
 * Mongoose
 * Handlebars
+* NPM 
