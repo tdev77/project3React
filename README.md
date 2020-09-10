@@ -1,4 +1,5 @@
 # Leisure For You
+A React application, that lets the user stream music, seraches for books, as well as their favorite movies. 
 
 # Create React Express App
 
