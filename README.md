@@ -35,3 +35,5 @@ To deploy, simply add and commit your changes, and push to Heroku. As is, the NP
 
 ## Tools
 * React
+* Mongoose
+* Handlebars
