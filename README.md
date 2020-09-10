@@ -31,3 +31,4 @@ To deploy, simply add and commit your changes, and push to Heroku. As is, the NP
 ## Contributors 
 * Teddy Dye - Front-end Development
 * David Shalmi - Back-end Development
+* Fabian Guerrier - Back-end Development
